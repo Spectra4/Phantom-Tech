@@ -11,7 +11,7 @@ const ContactUs = () => {
       <Header />
       <div 
         className="relative min-h-screen bg-cover bg-center flex items-center justify-center px-5 py-16"
-        style={{ backgroundImage: "url('/contact-bg.jpg')" }} // Add an attractive background image
+        style={{ backgroundImage: "url('/assets/contact-us.jpg')" }} // Add an attractive background image
       >
         <div className="absolute inset-0 bg-black opacity-50"></div> {/* Dark overlay */}
         
