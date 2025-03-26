@@ -77,9 +77,27 @@ export const TopSellerList = () => {
   return (
     <Box sx={{ backgroundColor: '#eeeeee'}}>
       <div className="container  py-5 overflow-hidden">
-        <h1 className="text-4xl font-bold mb-8 text-center">
+      <Box display="flex" alignItems="center" justifyContent="center" sx={{ mb: 2 }}>
+          <Box
+            sx={{
+              width: "100px", // Shorter line
+              height: "2px",
+              background: "linear-gradient(to left, rgb(0, 0, 0), rgba(255,255,255,0))",
+              ml: 2
+            }}
+          />
+          <Typography variant="h4" fontWeight="bold" sx={{ mx: 2 }}>
           Top Selling Products
-        </h1>
+          </Typography>
+          <Box
+            sx={{
+              width: "100px", // Shorter line
+              height: "2px",
+              background: "linear-gradient(to right, rgb(0, 0, 0), rgba(255,255,255,0))",
+              mr: 2
+            }}
+          />
+        </Box>
         <Slider {...settings}>
           {products.map((product) => (
             <div key={product._id} className="p-3">

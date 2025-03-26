@@ -134,18 +134,30 @@ const Cart = () => {
                 <span className="text-lg font-bold">₹{totalPrice}</span>
               </div>
               <Link href="/checkout" passHref>
-                <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-500 transition">
-                  Proceed to Checkout
-                </button>
+              <button 
+                className="mt-6 text-white px-6 py-3 rounded-lg font-medium transition"
+                style={{ backgroundColor: "#7819CF" }}
+                onMouseOver={(e) => e.currentTarget.style.backgroundColor = "#6514B0"} 
+                onMouseOut={(e) => e.currentTarget.style.backgroundColor = "#7819CF"}
+              >
+              Proceed to Checkout
+              </button>
+
               </Link>
             </div>
           </div>
         )}
 
         <Link href="/" passHref>
-          <button className="mt-6 bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-400 transition">
-            Continue Shopping
-          </button>
+        <button 
+          className="mt-6 text-white px-6 py-3 rounded-lg font-medium transition"
+          style={{ backgroundColor: "#7819CF" }}
+          onMouseOver={(e) => e.currentTarget.style.backgroundColor = "#6514B0"} 
+          onMouseOut={(e) => e.currentTarget.style.backgroundColor = "#7819CF"}
+        >
+        Continue Shopping
+        </button>
+
         </Link>
       </div>
 
