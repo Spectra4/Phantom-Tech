@@ -43,11 +43,10 @@ export const Cta = () => {
             </Typography>
 
             <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
-              Sodales tellus nunc posuere lorem laoreet egestas rhoncus quis. Arcu velit diam pretium tincidunt mauris ante aliquam ultricies ut.
-              Sodales tellus nunc posuere lorem laoreet egestas rhoncus quis. Arcu velit diam pretium tincidunt mauris ante aliquam ultricies ut.
-              Sodales tellus nunc posuere lorem laoreet egestas rhoncus quis. Arcu velit diam pretium tincidunt mauris ante aliquam ultricies ut.
-              Sodales tellus nunc posuere lorem laoreet egestas rhoncus quis. Arcu velit diam pretium tincidunt mauris ante aliquam ultricies ut.
-              Sodales tellus nunc posuere lorem laoreet egestas rhoncus quis. Arcu velit diam pretium tincidunt mauris ante aliquam ultricies ut.
+            At Phantom Tech, we’re dedicated to building more than just PCs—we’re about creating exceptional experiences. 
+            With years of expertise in custom PC builds, expert repairs, and high-performance upgrades, we cater to gamers, professionals, and anyone in need of tailored tech solutions. 
+            Our skilled team ensures every build delivers top-notch performance, from PC cleaning and hardware upgrades to flawless software installation. We also offer fast, secure delivery to get your custom PC or upgrades safely to your doorstep. 
+            Phantom Tech isn’t just a service; it’s an experience built on trust, innovation, and performance. Let us elevate your tech world.
             </Typography>
 
             <Button variant="contained" component={Link} href="/about" sx={{ backgroundColor: "#7819CF"}}>

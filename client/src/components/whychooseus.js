@@ -55,11 +55,10 @@ const UspsSection = () => {
             >
               <WorkspacePremium sx={{ fontSize: 50, color: "white" }} />
               <Typography variant="h6" fontWeight="bold" mt={1}>
-                Lorem Ipsum
+              Custom PC Builds
               </Typography>
               <Typography sx={{ opacity: 0.8, px: { xs: 2, md: 5 } }}>
-                Tortor scelerisque rhoncus bibendum ut tellus diam porta condimentum. 
-                Tortor arcu interdum orci dictum laoreet viverra.
+              We design and build PCs tailored to your needs, whether for gaming, work, or entertainment. Optimized for top performance and reliability.
               </Typography>
             </motion.div>
           </Grid>
@@ -75,11 +74,11 @@ const UspsSection = () => {
               <BusinessCenter sx={{ fontSize: 50, color: "white" }} />
               <Typography variant="h6" fontWeight="bold" mt={2}>
                 <span style={{ fontWeight: "bold", textDecoration: "underline" }}>
-                  Id velit sit velit nisi
+                PC Care & Support
                 </span>
               </Typography>
               <Typography sx={{ opacity: 0.8, px: { xs: 2, md: 5 } }}>
-                No need to search anywhere else. The biggest names in travel are right here.
+              Cleaning, repairs, upgrades, installations, and software setup – expert solutions to keep your system in top shape.
               </Typography>
             </motion.div>
           </Grid>
@@ -94,11 +93,10 @@ const UspsSection = () => {
             >
               <LocalShipping sx={{ fontSize: 50, color: "white" }} />
               <Typography variant="h6" fontWeight="bold" mt={1}>
-                Dictumst Proin
+              Fast & Reliable Delivery
               </Typography>
               <Typography sx={{ opacity: 0.8, px: { xs: 2, md: 5 } }}>
-                Quis morbi elementum et aliquet auctor non nisl pharetra ut. 
-                Eget enim tellus nulla iaculis rhoncus. Ut nibh.
+              Quick and secure delivery of your custom-built PC or upgrades, straight to your doorstep.
               </Typography>
             </motion.div>
           </Grid>

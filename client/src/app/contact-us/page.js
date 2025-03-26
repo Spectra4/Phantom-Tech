@@ -32,17 +32,17 @@ const ContactUs = () => {
             <div className="space-y-6">
               <ContactInfo 
                 Icon={FaPhone} 
-                text="+1 (123) 456-7890" 
+                text="+91 7249334274" 
                 bgColor="bg-blue-100"
               />
               <ContactInfo 
                 Icon={FaEnvelope} 
-                text="support@phantomtech.com" 
+                text="phantomstechpcs@gmail.com" 
                 bgColor="bg-green-100"
               />
               <ContactInfo 
                 Icon={FaMapMarkerAlt} 
-                text="123 Tech Street, New York, USA" 
+                text="Teen Nal Chowk Ttwari Nagpur 440018" 
                 bgColor="bg-red-100"
               />
             </div>

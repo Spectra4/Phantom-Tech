@@ -1,11 +1,13 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { FaTools, FaMicrochip, FaSpinner } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const CustomPCBuild = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <Header />
@@ -49,8 +51,73 @@ const CustomPCBuild = () => {
           </div>
           
           <p className="text-gray-600 mt-6">Stay tuned for updates!</p>
+
+          <button 
+            onClick={() => setIsOpen(true)} 
+            className="mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition"
+          >
+            Contact Us
+          </button>
         </motion.div>
       </div>
+      
+      {isOpen && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+          onClick={() => setIsOpen(false)}
+        >
+          <motion.div 
+            className="bg-white p-8 rounded-xl shadow-lg max-w-md w-full text-center relative"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button 
+              className="absolute top-5 right-5 text-gray-600 hover:text-gray-800 text-2xl"
+              onClick={() => setIsOpen(false)}
+            >
+              &times;
+            </button>
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Contact Us</h3>
+            <form>
+              <input 
+                type="text" 
+                placeholder="Your Name" 
+                className="w-full p-2 border rounded-lg mb-3" 
+                required
+              />
+              <input 
+                type="text" 
+                placeholder="Your Phone" 
+                className="w-full p-2 border rounded-lg mb-3" 
+                required
+              />
+              <input 
+                type="email" 
+                placeholder="Your Email" 
+                className="w-full p-2 border rounded-lg mb-3" 
+                required
+              />
+              <textarea 
+                placeholder="Your Message" 
+                className="w-full p-2 border rounded-lg mb-4 h-24"
+                required
+              ></textarea>
+              <motion.button 
+                type="submit" 
+                className="w-full flex items-center justify-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-all"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Send Message
+              </motion.button>
+            </form>
+          </motion.div>
+        </div>
+      )}
+
       <Footer />
     </>
   );

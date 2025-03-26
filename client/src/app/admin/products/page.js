@@ -19,12 +19,10 @@ function ProductTabs() {
          
       <Tabs value={selectedTab} onChange={handleTabChange} centered>
         <Tab label="Single Products" />
-        <Tab label="Customized Products" />
       </Tabs>
       
       <Box sx={{ paddingTop: 2 }}>
         {selectedTab === 0 && <SingleProductList />}
-        {selectedTab === 1 && <CustomizedProductList />}
       </Box>
     </Box>
   );
