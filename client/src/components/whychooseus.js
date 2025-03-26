@@ -50,7 +50,7 @@ const UspsSection = () => {
             <motion.div
               initial={{ opacity: 0, y: -100 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.4, delay: 0.2, ease: "easeOut" }}
+              transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
               whileHover={{ scale: 1.1 }}
             >
               <WorkspacePremium sx={{ fontSize: 50, color: "white" }} />
@@ -69,7 +69,7 @@ const UspsSection = () => {
             <motion.div
               initial={{ opacity: 0, y: -100 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.4, delay: 0.4, ease: "easeOut" }}
+              transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
               whileHover={{ scale: 1.1 }}
             >
               <BusinessCenter sx={{ fontSize: 50, color: "white" }} />
@@ -89,7 +89,7 @@ const UspsSection = () => {
             <motion.div
               initial={{ opacity: 0, y: -100 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.4, delay: 0.6, ease: "easeOut" }}
+              transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
               whileHover={{ scale: 1.1 }}
             >
               <LocalShipping sx={{ fontSize: 50, color: "white" }} />
