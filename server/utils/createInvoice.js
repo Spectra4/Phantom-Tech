@@ -26,11 +26,11 @@ const createInvoice = (order) => {
     .moveDown(0.5)
     .fillColor(headerColor)
     .fontSize(20)
-    .text("Kwality Chicken Center", 150, 50, { width: 400, align: "center" }) // Add width to avoid overlapping with logo
+    .text("Phantom Tech", 150, 50, { width: 400, align: "center" }) // Add width to avoid overlapping with logo
     .moveDown(0.3)
     .fontSize(10)
     .fillColor(secondaryTextColor)
-    .text("Shop No, 55 56, Chatrapati Shivaji Market, Camp, Near St. Xaviers Church, Pune, Maharashtra, 411001", {
+    .text("Pune, Maharashtra, 411001", {
       width: 400,
       align: "center",
     })

@@ -149,20 +149,6 @@ const OrderInvoice = () => {
             >
               <Box>
                 <Typography fontWeight="bold">{product.name}</Typography>
-                {/* <Typography variant="body2" color="textSecondary">
-                  {product.product.weight
-                    ? [
-                        product.product.weight.grams &&
-                          `${product.product.weight.grams}`,
-                        product.product.weight.pieces &&
-                          `${product.product.weight.pieces}`,
-                        product.product.weight.serves &&
-                          `${product.product.weight.serves}`,
-                      ]
-                        .filter(Boolean)
-                        .join(" | ")
-                    : null}
-                </Typography> */}
                 <Typography variant="body2" color="textSecondary">
                   {product.quantity} x ₹{product.price.toFixed(2)}
                 </Typography>

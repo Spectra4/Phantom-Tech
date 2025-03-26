@@ -438,13 +438,6 @@ const Checkout = () => {
             Modify Cart
           </Button>
         </Link>
-        {/* <Typography
-          variant="body2"
-          sx={{ color: "green", fontWeight: "bold", mb: "4px", mt: { sm: 0, xs: 2 } }}
-        >
-          <BoltIcon sx={{ color: "yellow" }} />
-          Get Delivered in 2 Hours
-        </Typography> */}
       </Box>
 
       {/* Total Price */}

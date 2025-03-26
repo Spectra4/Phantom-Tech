@@ -115,16 +115,7 @@ const CategoryProducts = () => {
             <Typography variant="h6" sx={{ fontWeight: "bold" }}>
               {product.name}
             </Typography>
-            {/* <Typography variant="body2" color="text.secondary">
-              {[
-                product.weight?.grams && `${product.weight.grams}`,
-                product.weight?.pieces && `${product.weight.pieces}`,
-                product.weight?.serves && ` ${product.weight.serves}`,
-              ]
-                .filter(Boolean)
-                .join(" | ")}
-            </Typography> */}
-
+            
             <Box
               display="flex"
               alignItems="center"
@@ -147,15 +138,7 @@ const CategoryProducts = () => {
                 ₹{product.salePrice}
               </Typography>
             </Box>
-            {/* <Typography
-              variant="body2"
-              sx={{ color: "green", fontWeight: "bold" }}
-            >
-              {" "}
-              <BoltIcon sx={{ color: "yellow" }} />
-              Get Delivered in 2 Hours
-            </Typography> */}
-
+            
               <Button
                 size="small"
                 sx={{
