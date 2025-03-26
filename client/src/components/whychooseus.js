@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { WorkspacePremium, BusinessCenter, LocalShipping } from "@mui/icons-material";
+import { Build, BusinessCenter, LocalShipping } from "@mui/icons-material";
 import { Box, Typography, Grid } from "@mui/material";
 import { useInView } from "react-intersection-observer";
 
@@ -20,7 +20,7 @@ const UspsSection = () => {
         <Box display="flex" alignItems="center" justifyContent="center" sx={{ mb: 2 }}>
           <Box
             sx={{
-              width: "100px", // Shorter line
+              width: "100px",
               height: "2px",
               background: "linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0))",
               ml: 2
@@ -31,7 +31,7 @@ const UspsSection = () => {
           </Typography>
           <Box
             sx={{
-              width: "100px", // Shorter line
+              width: "100px",
               height: "2px",
               background: "linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0))",
               mr: 2
@@ -53,7 +53,7 @@ const UspsSection = () => {
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
               whileHover={{ scale: 1.1 }}
             >
-              <WorkspacePremium sx={{ fontSize: 50, color: "white" }} />
+              <Build sx={{ fontSize: 50, color: "white" }} />
               <Typography variant="h6" fontWeight="bold" mt={1}>
               Custom PC Builds
               </Typography>
