@@ -78,7 +78,7 @@ const Header = () => {
           {/* Logo */}
           {!isMobile && (
           <Link href="/" style={{ marginLeft: "70px" }}>
-            <Box component="img" src="/logo.png" alt="Logo" sx={{ width: isMobile ? 60 : 90, objectFit: "contain" }} />
+            <Box component="img" src="/logo.png" alt="Logo" sx={{ width: isMobile ? 60 : 130, objectFit: "contain" }} />
           </Link>
           )}
 

@@ -1,5 +1,6 @@
 "use client";
 import Slider from "react-slick";
+import Link from "next/link";
 // import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material"; 
 
 // const PrevArrow = (props) => {
@@ -45,7 +46,37 @@ export const Banner = () => {
     <div className="flex justify-center">
       {/* <Slider {...settings}> */}
         {/* <div> */}
-          <img src="/banner.png" alt="Banner" style={{ maxHeight: '500px', width:'96vw',backgroundSize:'contain',borderRadius:'10px'}} />
+          {/* <img src="/banner.png" alt="Banner" style={{ maxHeight: '500px', width:'96vw',backgroundSize:'contain',borderRadius:'10px'}} /> */}
+          <div className="relative w-full h-[650px]">
+            {/* Video Background */}
+            <video 
+              src="/assets/banner-bg.mp4" 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              className="absolute top-0 left-0 w-full h-full object-cover"
+            />
+
+            {/* Dark Overlay */}
+            <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
+
+            {/* Banner Content */}
+            <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center text-white px-6">
+              <h1 className="text-4xl md:text-6xl font-bold mb-4">
+                Welcome to Phantom Tech
+              </h1>
+              <p className="text-lg md:text-xl max-w-2xl">
+                Build your dream PC with the best components and expert support.
+              </p>
+              {/* Button with Link */}
+              <Link href="/custom-pc">
+                <button className="mt-6 bg-[#7819CF] hover:bg-[#6514B0] text-white px-6 py-3 rounded-lg font-semibold transition">
+                  Get Started
+                </button>
+              </Link>
+            </div>
+          </div>
         {/* </div> */}
         {/* <div>
           <img className="rounded-lg" src="/banner.jpg" alt="Banner" style={{ height: '500px', width:'100%'}} />

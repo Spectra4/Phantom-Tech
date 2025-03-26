@@ -80,7 +80,7 @@ export const Category = () => {
                 flexDirection: "column",
                 textAlign: "center",
                 boxShadow: 3,
-                borderRadius: 2,
+                borderRadius: 10,
                 overflow: "hidden",
                 transition: "transform 0.3s, box-shadow 0.3s",
                 "&:hover": {
