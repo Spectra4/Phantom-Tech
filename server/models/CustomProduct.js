@@ -1,5 +1,9 @@
 const mongoose = require("mongoose");
 
+const variationSchema = new mongoose.Schema({
+  price: { type: Number, required: true },
+});
+
 const CustomproductSchema = new mongoose.Schema({
   name: { type: String, required: true },
   description: { type: String },
