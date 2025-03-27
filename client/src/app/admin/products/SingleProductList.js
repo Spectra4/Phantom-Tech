@@ -88,7 +88,6 @@ function SingleProductList() {
   const handleOpen = (product) => {
     setSelectedProduct({
       ...product,
-      // weight: product.weight || { grams: "", pieces: "", serves: "" },
     });
     setImages([]);
     setOpen(true);
@@ -110,9 +109,6 @@ function SingleProductList() {
     formData.append("salePrice", selectedProduct.salePrice);
     formData.append("category", selectedProduct.category._id);
     formData.append("isTopSeller", selectedProduct.isTopSeller || false);
-    // formData.append("weight[grams]", selectedProduct.weight.grams || "");
-    // formData.append("weight[pieces]", selectedProduct.weight.pieces || "");
-    // formData.append("weight[serves]", selectedProduct.weight.serves || "");
 
     images.forEach((image) => {
       formData.append("images", image);
@@ -133,23 +129,6 @@ function SingleProductList() {
       handleClose();
     } catch (err) {
       console.error("Error updating product:", err);
-    }
-  };
-
-  // Handle changes in the product modal inputs
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-
-    if (name === "grams" || name === "pieces" || name === "serves") {
-      setSelectedProduct((prevProduct) => ({
-        ...prevProduct,
-        weight: {
-          ...prevProduct.weight,
-          [name]: value,
-        },
-      }));
-    } else {
-      setSelectedProduct({ ...selectedProduct, [name]: value });
     }
   };
 
@@ -187,9 +166,6 @@ function SingleProductList() {
     formData.append("salePrice", selectedProduct.salePrice);
     formData.append("category", selectedProduct.category._id);
     formData.append("isTopSeller", selectedProduct.isTopSeller || false);
-    // formData.append("weight[grams]", selectedProduct.weight.grams || "");
-    // formData.append("weight[pieces]", selectedProduct.weight.pieces || "");
-    // formData.append("weight[serves]", selectedProduct.weight.serves || "");
 
     images.forEach((image) => {
       formData.append("images", image);
@@ -315,33 +291,6 @@ function SingleProductList() {
                 onChange={handleInputChange}
                 margin="normal"
               />
-
-              {/* <Box display="flex" gap={2}>
-                <TextField
-                  label="Weight (grams)"
-                  fullWidth
-                  name="grams"
-                  value={selectedProduct.weight?.grams || ""}
-                  onChange={handleInputChange}
-                  margin="normal"
-                />
-                <TextField
-                  label="Pieces"
-                  fullWidth
-                  name="pieces"
-                  value={selectedProduct.weight?.pieces || ""}
-                  onChange={handleInputChange}
-                  margin="normal"
-                />
-                <TextField
-                  label="serves"
-                  fullWidth
-                  name="serves"
-                  value={selectedProduct.weight?.serves || ""}
-                  onChange={handleInputChange}
-                  margin="normal"
-                />
-              </Box> */}
 
               <TextField
                 label="Description"

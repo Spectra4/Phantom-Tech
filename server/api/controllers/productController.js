@@ -5,7 +5,7 @@ const cloudinary = require('../../config/cloudinary');
 // @route   POST /api/products
 exports.createProduct = async (req, res) => {
   try {
-    const { name, regularPrice, salePrice, description, category, weight, isTopSeller } = req.body;
+    const { name, regularPrice, salePrice, description, category, isTopSeller } = req.body;
    
      // Collect image file paths
      let imagePaths = [];
@@ -28,11 +28,6 @@ exports.createProduct = async (req, res) => {
       description,
       category,
       images: imagePaths, // Store image paths
-      weight: {
-        grams: weight?.grams || "", 
-        pieces: weight?.pieces || "", 
-        serves: weight?.serves || ""
-      },
       isTopSeller: isTopSeller || false 
     });
 
@@ -91,7 +86,7 @@ exports.getProductById = async (req, res) => {
 exports.updateProduct = async (req, res) => {
   try {
     const productId = req.params.id;
-    const { name, description, regularPrice, salePrice, category, weight, isTopSeller } = req.body;
+    const { name, description, regularPrice, salePrice, category, isTopSeller } = req.body;
   
     // Check if product exists
     let product = await Product.findById(productId);
@@ -126,11 +121,6 @@ exports.updateProduct = async (req, res) => {
     product.salePrice = salePrice || product.salePrice;
     product.category = category || product.category;
     product.isTopSeller = isTopSeller || product.isTopSeller;
-    product.weight = {
-      grams: weight?.grams || product.weight?.grams || "",
-      pieces: weight?.pieces || product.weight?.pieces || "",
-      serves: weight?.serves || product.weight?.serves || ""
-    };
 
     // Save updated product
     await product.save();
