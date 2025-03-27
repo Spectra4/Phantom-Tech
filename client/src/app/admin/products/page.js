@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { Tab, Tabs, Box, Typography } from '@mui/material';
 import SingleProductList from './SingleProductList';
-import CustomizedProductList from './CustomizedProductList';
 
 function ProductTabs() {
   const [selectedTab, setSelectedTab] = useState(0);

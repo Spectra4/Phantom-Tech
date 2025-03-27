@@ -1,6 +1,5 @@
 const Order = require("../../models/Order");
 const Product = require("../../models/Product");
-const CustomProduct = require("../../models/CustomProduct");
 
 const Customer = require("../../models/Customer");
 const createInvoice = require("../../utils/createInvoice");
@@ -131,7 +130,7 @@ exports.createOrder = async (req, res) => {
       \n\nProducts:\n${productsList}
       \n\nNote:\n${order.note}
       \n\nThank you,
-      \nKwality Ecom Team `,
+      \nPhantom Tech `,
       });
     } catch (error) {
       console.error("Error sending email to admin:", error.message);

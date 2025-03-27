@@ -7,7 +7,6 @@ const cors = require('cors');
 const authRoutes = require('./routes/auth');
 const categoryRoutes = require('./routes/category');
 const productRoutes = require('./routes/product');
-const customproductRoutes = require('./routes/customproduct');
 const orderRoutes = require('./routes/order');
 const customerRoutes = require('./routes/customer');
 const metricsRoutes = require('./routes/metrics');
@@ -33,7 +32,6 @@ app.use("/uploads", express.static("public/uploads"));
 app.use('/auth', authRoutes);           // Auth routes
 app.use('/categories', categoryRoutes); // Category routes
 app.use('/products', productRoutes);    // Product routes
-app.use('/custom-products', customproductRoutes);    // Product routes
 app.use('/orders', orderRoutes);        // Order routes
 app.use('/customers', customerRoutes);  // Customers
 app.use('/metrics', metricsRoutes);     // Metrics routes
